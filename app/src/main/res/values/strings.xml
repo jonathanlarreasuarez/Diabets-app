@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Diabets</string>
+    <string name="calculadora">calculadora</string>
+    <string name="registro">registro</string>
+    <string name="historial">historial</string>
+</resources>

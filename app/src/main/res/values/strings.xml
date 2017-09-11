@@ -3,4 +3,7 @@
     <string name="calculadora">calculadora</string>
     <string name="registro">registro</string>
     <string name="historial">historial</string>
+    <string name="Acerca">Acerca</string>
+    <string name="Glosario">Glosario</string>
+    <string name="registroAlimento">registroAlimento</string>
 </resources>

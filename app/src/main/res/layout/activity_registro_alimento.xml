@@ -1,0 +1,177 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6fA"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/layoutlis1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/layout2"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fondoredondo">
+
+                <ImageView
+                    android:id="@+id/imagelis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_margin="5dp"
+                    design:srcCompat="@mipmap/ic_carbohidrato" />
+
+
+                <TextView
+                    android:id="@+id/alimentostv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+
+                    android:layout_toRightOf="@+id/imagelis1"
+                    android:text="Registrar Alimentos"
+                    android:textColor="#0099D5"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/alimentostvcate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alimentostv"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_toRightOf="@+id/imagelis1"
+                    android:text="nombre"
+                    android:textColor="#989898"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/alimentostvali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alimentostvcate"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/imagelis1"
+                    android:text="Valor Carbohidrato"
+                    android:textColor="#989898"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editAlimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/alimentostv"
+                    android:layout_marginTop="5dp"
+                    android:ems="6"
+                    android:hint=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/editCarbo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@id/editAlimento"
+                    android:ems="6"
+                    android:hint=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutlis1"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/layout3"
+
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/botonredondo"
+                    android:ems="10"
+                    android:onClick="guardarlista"
+                    android:text="Cancelar"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/calcularali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout3"
+
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/botonredondo"
+                    android:ems="10"
+
+                    android:onClick="guardarlista"
+                    android:text="Agregar"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btnnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        design:menu="@menu/menu_navigation" />
+
+
+</android.support.design.widget.CoordinatorLayout>

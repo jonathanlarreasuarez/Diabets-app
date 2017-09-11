@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alimento">
+        <item>Arroz</item>
+        <item>Galletas</item>
+        <item>Avena</item>
+        <item>Pan</item>
+        <item>Papa</item>
+        <item>Papa</item>
+        <item>choclo</item>
+        <item>Fideos</item>
+        <item>Frejol</item>
+
+    </string-array>
+
+</resources>

@@ -2,23 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.diabets.diabets">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lista" />
-        <activity android:name=".registro" />
-        <activity android:name=".historial"></activity>
+        <activity android:name=".lista"
+            android:label="Lista de Alimentos"
+            />
+        <activity android:name=".registro"
+            android:label="Perfil Usuario"
+            />
+        <activity android:name=".historial" />
+        <activity android:name=".perfil" />
+        <activity android:name=".MainActivity"
+            android:label="Cálculo Dosis de Insulina"
+            />
+        <activity android:name=".Registrarse"
+            android:label="Registro Usuario"/>
+        <activity android:name=".glosario"
+            android:label="Glosario"
+            />
+        <activity android:name=".registroAlimento"></activity>
     </application>
 
 </manifest>

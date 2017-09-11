@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alimentos">
+        <item>Cereales</item>
+        <item>Frutas</item>
+        <item>Azucares</item>
+        <item>Lacteos</item>
+        <item>Verduras</item>
+    </string-array>
+
+</resources>

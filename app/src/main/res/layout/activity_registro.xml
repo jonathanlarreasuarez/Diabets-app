@@ -1,9 +1,746 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.diabets.diabets.registro">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TabHost
+                android:id="@+id/tabprincipal"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp">
+
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/fondoredondo"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:id="@+id/tab1layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:descendantFocusability="beforeDescendants"
+                                android:focusableInTouchMode="true"
+
+                                android:background="@drawable/fondoredondo">
+
+                                <ImageView
+                                    android:id="@+id/rimim1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_listauser" />
+
+                                <!--<ImageView
+                                    android:id="@+id/rimim2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@id/rimim1"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+
+                                <ImageView
+                                    android:id="@+id/rimim3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@id/rimim2"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+
+                                <ImageView
+                                    android:id="@+id/rimim4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@id/rimim3"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+
+                                <ImageView
+                                    android:id="@+id/rimim5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@id/rimim4"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />-->
+
+
+                                <EditText
+                                    android:id="@+id/rimet1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_toLeftOf="@+id/rimmedida1"
+                                    android:ems="3"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/rimet2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rimet1"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/rimmedida1"
+                                    android:ems="3"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/rimet3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rimet2"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/rimmedida1"
+                                    android:ems="2"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/edit6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rimet2"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/rimmedidaMin"
+                                    android:ems="2"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/rimet4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rimet3"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/rimmedida1"
+                                    android:ems="3"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/rimet5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rimet4"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/rimmedida1"
+                                    android:ems="3"
+                                    android:hint="0"
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+
+                                <TextView
+                                    android:id="@+id/tvRatio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+
+
+                                    android:layout_toRightOf="@+id/rimim1"
+                                    android:text="Ratio CH"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/tvSensibilidad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvRatio"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/rimim1"
+
+                                    android:text="Sensibilidad Insulina"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvRango"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvSensibilidad"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/rimim1"
+
+                                    android:text="Rango Objetivo"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvPeso"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvRango"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/rimim1"
+
+                                    android:text="Peso"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/tvAltura"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvPeso"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/rimim1"
+
+                                    android:text="Altura"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/rimmedida1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="ch"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/rimmedida2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@+id/rimmedida1"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="25dp"
+                                    android:text="mg"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/rimmedida3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@+id/rimmedida2"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="25dp"
+                                    android:text="max"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/rimmedidaMin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_below="@+id/rimmedida2"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toLeftOf="@+id/rimet3"
+                                    android:text="min"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/rimmedida4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@+id/rimmedida3"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="25dp"
+                                    android:text="kg"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/rimmedida5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@+id/rimmedida4"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="25dp"
+                                    android:text="cm"
+
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/cancelarM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+
+                                    android:layout_below="@+id/rimet5"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/botonredondo"
+                                    android:onClick="editar"
+                                    android:text="Editar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+                                <Button
+                                    android:id="@+id/guardarM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentRight="true"
+
+                                    android:layout_below="@+id/rimet5"
+
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@drawable/botonredondo"
+                                    android:onClick="GuardarTodo"
+
+                                    android:text="Guardar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/fondoredondo"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/tab2layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/fondoredondo">
+
+                                <ImageView
+                                    android:id="@+id/brimim1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_listauser"/>
+
+
+                                <EditText
+                                    android:id="@+id/brimet1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="8dp"
+
+                                    android:ems="8"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/brimet2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@id/brimet1"
+                                    android:layout_marginTop="8dp"
+
+                                    android:ems="8"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/brimet6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@id/brimet2"
+                                    android:layout_marginTop="8dp"
+
+                                    android:ems="8"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/brimet7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@id/brimet6"
+                                    android:layout_marginTop="8dp"
+
+                                    android:ems="8"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+
+                                <TextView
+                                    android:id="@+id/brimtv1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_toRightOf="@+id/brimim1"
+                                    android:text="Nombres"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/brimtv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/brimtv1"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/brimim1"
+                                    android:text="Apellidos"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/tvSexo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/brimtv2"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/brimim1"
+                                    android:text="Teléfono"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/tvFechaNacimiento"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvSexo"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_toRightOf="@+id/brimim1"
+                                    android:inputType="date"
+                                    android:text="Correo"
+                                    android:textColor="#989898"
+                                    android:textSize="15dp" />
+
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/cancelarP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+
+                                    android:layout_below="@+id/rimet5"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/botonredondo"
+                                    android:onClick="editarP"
+                                    android:text="Editar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+                                <Button
+                                    android:id="@+id/guardarP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentRight="true"
+
+                                    android:layout_below="@+id/rimet5"
+
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@drawable/botonredondo"
+                                    android:onClick="GuardarTodo"
+
+                                    android:text="Guardar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:id="@+id/tab3layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/fondoredondo">
+                                <ImageView
+                                    android:id="@+id/brimim3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+                                <ImageView
+                                    android:id="@+id/brimim4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@id/brimim3"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+                                <ImageView
+                                    android:id="@+id/brimim5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@id/brimim4"
+                                    android:layout_margin="5dp"
+                                    design:srcCompat="@mipmap/ic_launcher" />
+
+                                <EditText
+                                    android:id="@+id/brimet3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_toRightOf="@+id/brimtv3"
+                                    android:ems="6"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+                                <EditText
+                                    android:id="@+id/brimet4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/brimet3"
+                                    android:layout_toRightOf="@+id/brimtv4"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:ems="6"
+                                    android:hint=""
+                                    android:inputType="number"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <EditText
+                                    android:id="@+id/brimet5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/brimet4"
+                                    android:layout_toRightOf="@+id/brimtv5"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:ems="6"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary" />
+
+                                <TextView
+                                    android:id="@+id/brimtv3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_toRightOf="@+id/brimim3"
+                                    android:text="Ciudad"
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:id="@+id/brimtv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/brimet3"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_toRightOf="@+id/brimim4"
+                                    android:text="Teléfono"
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+                                <TextView
+                                    android:id="@+id/brimtv5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/brimtv4"
+                                    android:layout_marginTop="37dp"
+                                    android:layout_toRightOf="@+id/brimim5"
+                                    android:text="Correo"
+                                    android:textColor="#989898"
+                                    android:textSize="17dp" />
+
+                                <Button
+                                    android:id="@+id/btnFinal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+
+
+                                    android:layout_below="@+id/brimtv5"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/botonredondo"
+                                    android:ems="10"
+                                    android:onClick="GuardarTodo"
+                                    android:text="Guardar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+                                <Button
+                                    android:id="@+id/cancelar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@+id/brimtv5"
+
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="4dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@drawable/botonredondo"
+                                    android:ems="10"
+
+                                    android:text="Cancelar"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+        <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btnnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        design:menu="@menu/menu_navigation"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

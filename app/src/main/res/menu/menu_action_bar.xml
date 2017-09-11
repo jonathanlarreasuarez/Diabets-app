@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+       <item
+           android:id="@+id/acerca"
+           android:title="@string/Acerca"
+           android:icon="@drawable/ic_home_black_24dp"
+           />
+
+
+       <item
+           android:id="@+id/registro"
+           android:title="@string/registro"
+           android:icon="@drawable/ic_home_black_24dp"
+           />
+
+
+       <item
+           android:id="@+id/historial"
+           android:title="@string/historial"
+           android:icon="@drawable/ic_home_black_24dp"
+
+           />
+   -->
+    <item
+        android:title="Salir"
+        android:id="@+id/salir"
+        android:icon="@drawable/ic_person"
+        />
+
+
+</menu>

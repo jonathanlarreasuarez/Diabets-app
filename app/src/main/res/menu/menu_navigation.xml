@@ -4,21 +4,28 @@
     <item
         android:id="@+id/calculadora"
         android:title="@string/calculadora"
-
-        />
-
-    <item
-        android:id="@+id/registro"
-        android:title="@string/registro"
-
+        android:icon="@drawable/ic_home_black_24dp"
         />
 
 
     <item
-        android:id="@+id/historial"
-        android:title="@string/historial"
+        android:id="@+id/Glosario"
+        android:title="@string/Glosario"
+        android:icon="@mipmap/ic_userdata"
+        />
 
 
+   <!-- <item
+        android:id="@+id/registroAlimento"
+        android:title="@string/registroAlimento"
+        android:icon="@mipmap/ic_carbohidrato"
+
+        />-->
+
+    <item
+        android:title="perfil"
+        android:id="@+id/perfil"
+        android:icon="@mipmap/ic_glucosa"
         />
 
 

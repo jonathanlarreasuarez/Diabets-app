@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diabets.diabets.LoginActivity">-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6fA"
+    android:orientation="vertical"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imagenLogo"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/fondoredondoazul"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/logoapp"
+                android:scaleType="centerCrop" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_below="@+id/imagenLogo"
+
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/fondoredondo">
+
+
+            <ImageView
+                android:id="@+id/imageViewUser"
+                design:srcCompat="@mipmap/ic_glucosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp" />
+
+            <ImageView
+                android:id="@+id/imageViewPass"
+                design:srcCompat="@mipmap/ic_glucosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_below="@+id/imageViewUser"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/nombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_toRightOf="@+id/imageViewUser"
+                android:hint="Usuario"
+
+                android:inputType="text"
+                android:text="champ"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/claveUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombreUsuario"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_toRightOf="@+id/imageViewPass"
+                android:hint="Contraseña"
+
+                android:inputType="textPassword"
+                android:text="lachqt"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary" />
+
+            <!--<EditText
+                android:id="@+id/claveUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName"
+                android:text="lachqt"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="139dp" />
+
+            <EditText
+                android:id="@+id/nombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:text="champ"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="Glucosa Actual"
+                android:textColor="#989898"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/medida1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="4dp"
+                android:text="gr"
+                android:textColor="#989898"
+                android:textSize="17dp" />-->
+           <!-- <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="validarLogin"
+                android:layout_below="@id/claveUsuario"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/botonredondo"
+                android:text="Ingresar"
+                android:textColor="#ffffff"
+                android:textSize="11dp" />-->
+
+
+
+
+           <!-- <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="validarLogin"
+                android:text="Ingresar"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irRegistro"
+                android:text="Registrarse" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ingresoInvitado"
+                android:text="Ingresar como Invitado" />-->
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+android:layout_marginLeft="16dp"
+            android:background="@drawable/botonredondo"
+            android:onClick="validarLogin"
+            android:ems="10"
+            android:text="INGRESAR"
+            android:textColor="#ffffff"
+
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/layouttxtRegistro"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:paddingLeft="50dp"
+                android:textSize="15dp"
+                android:text="No tienes una cuenta?" />
+
+            <TextView
+                android:id="@+id/registroBtn"
+                android:onClick="irRegistro"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/textView6"
+
+                android:layout_height="wrap_content"
+                android:textColor="#0099d5"
+                android:text=" Registrate!" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layouttxtInvitado"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layouttxtRegistro"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_alignParentBottom="true">
+
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/botonsecundario"
+                android:layout_alignParentBottom="true"
+
+                android:ems="10"
+                android:text="Ingresar como Invitado"
+                android:textColor="#0099d5"
+                android:onClick="ingresoInvitado"
+                android:textSize="10dp" />
+
+
+
+        </RelativeLayout>
+        <!--<LinearLayout
+            android:id="@+id/loginLin"
+            android:layout_width="210dp"
+            android:layout_height="485dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <EditText
+                android:id="@+id/nombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:text="champ"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <EditText
+                android:id="@+id/claveUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName"
+                android:text="lachqt"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="139dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="validarLogin"
+                android:text="Ingresar"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irRegistro"
+                android:text="Registrarse" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ingresoInvitado"
+                android:text="Ingresar como Invitado" />
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+<!--</android.support.constraint.ConstraintLayout>-->
